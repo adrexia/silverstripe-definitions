@@ -7,10 +7,6 @@
 		"silverstripe/framework": "3.0.*",
 		"undefinedoffset/sortablegridfield": "dev-master"
 	},
-	"support": {
-		"email": "scienceninjas@silverstripe.com",
-		"irc": "irc://irc.freenode.org/silverstripe"
-	},
 	"license": "BSD-2-Clause",
 	"authors": [
 			{
