@@ -2,7 +2,7 @@
 	"name": "adrexia/definitions",
 	"description": "Simple definitions module",
 	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "process", "diagramme"],
+	"keywords": ["silverstripe", "definitions"],
 	"require": {
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.0.*",
