@@ -19,8 +19,10 @@ class ServiceDefinition extends DataObject implements PermissionProvider {
 
 	public static $default_sort = 'Order';
 	
-	public function updateCMSFields($fields){
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
 		$fields->removeByName('Order');
+		return $fields;
 	}
 
 	public function canView($member = null) {
