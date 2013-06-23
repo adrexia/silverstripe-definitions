@@ -25,6 +25,21 @@ class ServiceDefinition extends DataObject implements PermissionProvider {
 		return $fields;
 	}
 
+	public function getLink() {
+		if ($this->URL) {
+			$url = parse_url($this->URL);
+
+			// if no scheme set in the link, default to http
+			if(!isset($url['scheme'])) {
+				return 'http://' . $this->URL;
+			}
+
+			return $this->URL;
+		} else {
+			return false;
+		}
+	}
+
 	public function canView($member = null) {
 		return true;
 	}
